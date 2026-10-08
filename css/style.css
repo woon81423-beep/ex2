@@ -92,6 +92,10 @@ header .bar02 {
   header ul {
     display: none;
   }
+  header h1{
+    font-size: 1.2rem;
+  }
+
 }
 
 /*-----visual-----*/
@@ -283,6 +287,7 @@ h3 {
   margin: 100px auto;
   overflow: hidden;
 }
+
 #con02 .con02_text {
   width: 1400px;
   margin: 0px auto;
@@ -380,6 +385,9 @@ h3 {
 @media (max-width: 768px) {
   #con02 {
     width: 100%;
+  }
+  #con02 h4 {
+    font-size: 1rem;
   }
   #con02 ul {
     flex-direction: column;
@@ -640,6 +648,9 @@ h3 {
     width: 100%;
     margin: 0px auto;
   }
+  #con04 h4 {
+    font-size: 1rem;
+  }
   #con04 div:nth-of-type(1) {
     display: none;
   }
@@ -768,9 +779,13 @@ h3 {
   #con05 .btn {
     display: flex;
     gap: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     font-weight: 700;
+  
+  }
+  #con05 p{
+    font-size:0.8rem;
   }
 }
 
@@ -836,9 +851,7 @@ footer .call00 {
     width: 100%;
     margin: 70px auto;
   }
-  footer .wrap01 {
-    /* justify-content: left; */
-  }
+
   footer .call02 {
     flex-direction: column;
   }
@@ -854,9 +867,7 @@ footer .call00 {
     width: 100%;
     margin: 50px auto;
   }
-  footer .wrap01 {
-    /* justify-content:center; */
-  }
+
   footer .call02,
   footer .call00 {
     flex-direction: column;
