@@ -92,10 +92,9 @@ header .bar02 {
   header ul {
     display: none;
   }
-  header h1{
+  header h1 {
     font-size: 1.2rem;
   }
-
 }
 
 /*-----visual-----*/
@@ -165,13 +164,19 @@ h3 {
   padding: 20px;
 }
 #con01 h3 {
-  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-size: clamp(1rem, 3.5vw, 2rem);
   color: blueviolet;
   font-weight: 900;
   margin: 0px 0px 30px;
 }
+
+#con02 .kid {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  font-weight: 900;
+  margin-bottom: 40px;
+}
 #con01 .kid {
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
   font-weight: 900;
   margin-bottom: 40px;
 }
@@ -302,13 +307,14 @@ h3 {
   opacity: 1;
 }
 #con02 h3 {
-  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-size: clamp(1rem, 3.5vw, 2rem);
   color: blueviolet;
   font-weight: 900;
   margin: 0px 0px 30px;
 }
+
 #con02 .kid {
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
   font-weight: 900;
   margin-bottom: 40px;
 }
@@ -527,8 +533,6 @@ h3 {
   width: 100%;
   margin: 30px 20px 100px;
   gap: 10px;
-
-  /* justify-content: center; */
 }
 #con03 button {
   background-color: #fff;
@@ -737,7 +741,7 @@ h3 {
   font-weight: 700;
 }
 #con05 ul li p {
-  font-size: 20px;
+  font-size: clamp(10px 2.5vw 20px);
   font-weight: 700;
 }
 #con05 ul li:hover {
@@ -782,10 +786,9 @@ h3 {
     font-size: 1rem;
     cursor: pointer;
     font-weight: 700;
-  
   }
-  #con05 p{
-    font-size:0.8rem;
+  #con05 p {
+    font-size: 0.8rem;
   }
 }
 
@@ -872,5 +875,8 @@ footer .call00 {
   footer .call00 {
     flex-direction: column;
     gap: 10px;
+  }
+  footer .call {
+    font-size: 15px;
   }
 }
