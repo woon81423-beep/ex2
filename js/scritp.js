@@ -64,7 +64,10 @@ $(function () {
     let i = $(this).index();
     $(".gongzi ul").hide();
     $(".gongzi ul").eq(i).show().css({ display: "flex" });
-    $(".btn div").css({ color: "#000000" });
-    $(this).eq(i).css({ color: "#858585" });
+   
+  });
+  $(".btn div").on("click", function () {
+    $(".btn div").css({ color: "#ccc" });
+    $(this).css({ color: "#000" });
   });
 });

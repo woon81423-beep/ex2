@@ -406,11 +406,14 @@ h3 {
     gap: 20px;
     align-items: center;
   }
+  #con02 .con02_text {
+  width: 100%;
+}
 }
 
 /*-----con03-----*/
 #con03 {
-  width: 1000px;
+  width: 1400px;
   margin: 0px auto;
 }
 #con03 .text01 {
@@ -852,7 +855,7 @@ footer .call00 {
 @media (min-width: 769px) and (max-width: 1199px) {
   footer > div {
     width: 100%;
-    margin: 70px auto;
+    margin: 70px auto 0px;
   }
 
   footer .call02 {
@@ -868,7 +871,7 @@ footer .call00 {
 @media (max-width: 768px) {
   footer > div {
     width: 100%;
-    margin: 50px auto;
+    margin: 50px auto 0px;
   }
 
   footer .call02,
