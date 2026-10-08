@@ -869,9 +869,16 @@ footer .call00 {
 }
 /*=footer 모바일 반응형=*/
 @media (max-width: 768px) {
+  footer {
+    font-size: 12px;
+  }
+  footer ul li{
+    font-size: 12px;
+  }
   footer > div {
     width: 100%;
     margin: 50px auto 0px;
+    font-size: 12px;
   }
 
   footer .call02,
@@ -880,6 +887,6 @@ footer .call00 {
     gap: 10px;
   }
   footer .call {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
