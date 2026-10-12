@@ -64,10 +64,54 @@ $(function () {
     let i = $(this).index();
     $(".gongzi ul").hide();
     $(".gongzi ul").eq(i).show().css({ display: "flex" });
-   
   });
   $(".btn div").on("click", function () {
     $(".btn div").css({ color: "#ccc" });
     $(this).css({ color: "#000" });
+  });
+
+  //
+
+  //
+  $(function () {
+    function res() {
+      let w = $(window).width();
+      if (w > 1200) {
+        $("header").on("mouseenter", function () {
+          $(".head01 li ul").show();
+        });
+        $("header").on("mouseleave", function () {
+          $(".head01 li ul").hide();
+        });
+      }
+    }
+    res();
+    $(window).on("resize", function () {
+      res();
+    });
+  });
+
+  // 메뉴 버튼 클릭: 열기 / 닫기
+  $(".bar").on("click", function () {
+    $("header").toggleClass("menu-open");
+  });
+
+  // 1200px 이하에서 서브 메뉴 열기
+  ".head01 > li"
+    .has("ul")
+    .children("a")
+    .on("click", function (e) {
+      if (window.width() <= 1200) {
+        e.preventDefault();
+        $(this).parent().toggleClass("active");
+      }
+    });
+
+  // PC 화면으로 변경되면 메뉴 초기화
+  window.on("resize", function () {
+    if (window.width() > 1200) {
+      $("header").removeClass("menu-open");
+      $(".head01 > li").removeClass("active");
+    }
   });
 });
